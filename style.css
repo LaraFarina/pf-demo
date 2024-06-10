@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1C1C1C;
+  font-family: Arial, sans-serif;
+  color: #F9F4FF; /* Color de texto */
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#example_demo {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#video {
+  width: 100%;
+  height: auto;
+}
+
+#prechosen_images_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Reducir el margen superior */
+  margin-bottom: 10px; /* Reducir el margen inferior */
+}
+
+#prechosen_images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+  width: 90%; /* Reducir el ancho para que quepa en pantallas más pequeñas */
+  max-width: 300px; /* Mantener un ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+#prechosen_images img {
+  width: 80px; /* Reducir el tamaño de las imágenes */
+  height: auto;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#model-select {
+  margin-top: 10px; /* Reducir el margen superior */
+  width: 90%; /* Reducir el ancho para que quepa en pantallas más pequeñas */
+  max-width: 300px;
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.hero_button_secondary {
+  display: block;
+  width: 90%; /* Reducir el ancho para que quepa en pantallas más pequeñas */
+  max-width: 300px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Añadir margen izquierdo */
+}
+
+.title h1 {
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column; /* Apilar los botones en columna */
+  align-items: flex-start; /* Alinear los botones a la izquierda */
+  margin-top: 10px; /* Añadir espacio arriba */
+}
+
+.buttons .btn {
+  background-color: gray; /* Cambiar fondo de botones a gris */
+  color: white; /* Cambiar color de texto a blanco */
+  height: 40px; /* Ajustar altura de botones */
+  width: 150px; /* Ajustar el ancho de los botones */
+  margin-right: 10px; /* Agregar margen derecho entre botones */
+  margin-bottom: 10px; /* Agregar margen inferior entre botones */
+}
+
+.arrow-left {
+  height: 40px; /* Ajustar altura de flecha */
+  margin-right: 10px; /* Agregar margen derecho */
+}
+
+.interpretacion {
+  margin: 0;
+  margin-right: 10px; /* Ajustar margen derecho */
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Apilar los elementos en columna */
+  align-items: center; /* Alinear elementos al centro horizontal */
+}
+
+.footer {
+  display: flex;
+  flex-direction: column; /* Apilar los elementos en columna */
+  align-items: center; /* Alinear elementos al centro horizontal */
+  margin-top: 20px; /* Añadir espacio arriba */
+}
+
+.model-selector {
+  margin-top: 10px; /* Añadir espacio arriba */
+}

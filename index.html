@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Señalito Demo</title>
+        <link href="./style.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.roboflow.com/0.2.25/roboflow.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="title">
+                    <img src="arrow-left.png" alt="atras" class="arrow-left">
+                    <h1 class="interpretacion">Interpretación</h1>
+                    <p>Formato de interpretación</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn" id="seña">Seña</button>
+                    <img src="flechaaas.png" alt="flecha" class="flechaaas">
+                    <button class="btn" id="voz_texto">Voz y texto</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="video-container" id="example_demo">
+                    <video muted autoplay loop id="video">
+                        <source
+                            src="https://uploads-ssl.webflow.com/5f6bc60e665f54545a1e52a5/63d15cb160518f7f9c59a892_Sequence 01-transcode.mp4"
+                            type="video/mp4"
+                            id="video_source"
+                        />
+                    </video>
+                </div>
+                <div class="image-container">
+                    <img
+                        src="https://uploads-ssl.webflow.com/5f6bc60e665f54545a1e52a5/63d3f236a6f0dae14cdf0063_drag-image-here.png"
+                        id="picture"
+                        style="display: none"
+                    />
+                </div>
+            </div>
+            <canvas width="640" height="480" id="picture_canvas"></canvas>
+            <canvas width="640" height="480" id="video_canvas"></canvas>
+            <div class="footer">
+                <div class="buttons">
+                    <a href="#" id="webcam-predict" class="hero_button_secondary"
+                        >Predecir Usando Webcam</a
+                    >
+                </div>
+                <div class="model-selector">
+                    <select id="model-select">
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
